@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header, .footer {
+            background-color: #FF7F7F;
+            padding: 10px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            background-color: #ADD8E6;
+            width: 20%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            background-color: #90EE90;
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Cabeçalho</div>
+    <div class="main">
+        <div class="sidebar">Barra Lateral</div>
+        <div class="content">Área de Conteúdo Principal</div>
+    </div>
+    <div class="footer">Rodapé</div>
+</body>
+</html>
